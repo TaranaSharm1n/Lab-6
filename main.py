@@ -9,6 +9,16 @@ def encode(phone):
 
     return encoded_string
 
+def decode(encoded_string):
+    #UF Email Account 
+    new_decoded_str = ''
+    num_list = [int(char) for char in encoded_string]
+
+    for i in range(len(num_list)):
+        num_list[i] -= 3
+        new_decoded_str += str(num_list[i])
+
+    return new_decoded_str
 
 
 if __name__ == "__main__":
@@ -23,6 +33,7 @@ if __name__ == "__main__":
             ans = encode(num_string)
             print("Your password has been encoded and stored!")
        	elif operation == '2':
-            pass
+            dans = decode(encode(num_string))
+            print("The encoded password is: " + ans + ", and the original password is: " + dans)
         else:
             is_running = False
