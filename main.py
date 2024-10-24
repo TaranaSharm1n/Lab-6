@@ -14,7 +14,7 @@ def decode(encoded_string):
     new_decoded_str = ''
     num_list = [int(char) for char in encoded_string]
 
-    for i in range(len(num_list)):
+    for i n range(len(num_list)):
         num_list[i] -= 3
         new_decoded_str += str(num_list[i])
 
