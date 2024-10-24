@@ -10,7 +10,7 @@ def encode(phone):
     return encoded_string
 
 def decode(encoded_string):
-    #UF Email Account 
+    #UF Email Accou 
     new_decoded_str = ''
     num_list = [int(char) for char in encoded_string]
 
